@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Jony Zhu">
+		<meta name="description" content="HTML5 Base Template.">
+		<meta name="keywords" content="HTML5,Template">
+		<title>yy的个人小站</title>
+		<!--[if IE]><script src="js/excanvas.js"></script><![endif]-->
+		<script src="jq/jquery.js"></script>		
+		<script>
+			$(document).ready(function(){
+			});
+		</script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			list-style: none;
+
+		}	
+		.header,.nav,.container,.footer{
+			/*这四个盒子都要左浮动*/
+			float: left;
+			width: 100%;
+			box-sizing: border-box;
+		}	
+		.nav
+		{
+			background: #333;
+		}
+		.nav a{
+			color: #fff;
+			padding: 10px 20px;
+			display: inline-block;
+		}
+		.nav a:hover{
+			background: #ddd;
+			color: #000;
+		}
+		.left,.right,.content{
+			padding: 5px;
+			box-sizing: border-box;
+		}
+		@media screen and (max-width: 700px)
+		{
+			.lefe,.right,.content
+			{
+				width: 100%;
+				margin: 0;
+			}
+		}
+		</style>	
+	</head>
+	<body>
+
+		<div class="main"  style="
+		width:800px;
+		margin:auto;
+		">
+			<div class="header" style="
+			background-image: url(无标题.png);
+			padding:20px;
+			text-align:center">
+
+				<h1>我的奇妙世界</h1>
+				<p>生活不止有眼前的苟且，还有诗与远方</p>
+			</div>
+			<div class="nav">
+				<a href="wodewangzhan.html">娱乐</a>
+				<a href="#">交际</a>
+				<a href="#">学习</a>
+				<a href="#">出行</a>
+			</div>
+			<div class="container">
+				
+				<div class="left" style="
+				float:left;
+				width:200px;">
+					<h2>待办事项</h2>
+					<p>首先明确自己真正想要什么——想要快乐，其次想要达到目标需要做到什么——无法快乐的根本原因就是供给达不到需求（这里需要验证），可以考虑增加供给，减少需求（降低要求，调整获得供给的时间）</p>
+				</div>
+				<div class="right" style="
+				float:right;
+				width:200px;">
+					<h2>已办事项</h2>
+					<p>已经完成的事情及从中获得的宝贵经验</p>
+				</div>
+				<div class="content" style="
+				margin:0 205px;">
+					<h2>语录</h2>
+					<p>世界是空的，我不要长寿；君埋泉下泥销骨，我寄人间雪满头；我不要收到装着你的广口骨灰盒</p>
+				</div>
+			</div>
+			<div class="footer" style="
+			padding: 10px;
+			text-align: center;
+			background-color:#ccc ;
+			color:black;">
+				权责声明</div>
+		</div>
+	</body>
+</html>
